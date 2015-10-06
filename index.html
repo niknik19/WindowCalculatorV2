@@ -153,6 +153,19 @@
                     <div class="wc-slider-vertical"></div>
 
                     <div class="wc-slider-horizontal"></div>
+
+                    <input class="wc-vertical-input">
+
+                    <input class="wc-horizontal-input">
+                </div>
+
+                <div class="wc-line"></div>
+
+                <div class="wc-price">
+                    <button class="wc-price-button">Расcчитать</button>
+                    <label class="wc-price-static-label">Стоимость изделия</label>
+                    <label class="wc-price-label"></label>
+                    <div class="wc-price-spinner"></div>
                 </div>
             </div>
 
@@ -227,14 +240,48 @@
     
     .wc-slider-vertical {
         height: 200px;
-        width: 2px;
+        width: 0px;
         position: absolute;
         top: 67px;
         right: 0;
+        border-left-color: #C5C4C4;
+        border-left-width: 2px;
+        border-right-color: #989898;
+        border-right-width: 2px;
+    }
+    
+    .wc-slider-horizontal {
+        height: 0px;
+        position: absolute;
+        top: 285px;
+        right: 20px;
+        width: 400px;
+        border-top-color: #C5C4C4;
+        border-top-width: 2px;
+        border-bottom-color: #AFAEAE;
+        border-bottom-width: 2px;
+    }
+    
+    .wc-slider-horizontal .ui-slider-range.ui-widget-header {
+        height: 2px;
+        top: -2px;
+        border: 1px solid rgb(211, 211, 211);
+        background-color: #f7b549;
+    }
+    
+    .wc-slider-vertical .ui-slider-range.ui-widget-header {
+        width: 2px;
+        left: -2px;
+        border: 1px solid rgb(211, 211, 211);
+        background-color: rgb(247, 181, 73);
     }
     
     .ui-slider-vertical .ui-slider-handle {
         left: -.37em;
+    }
+    
+    .ui-slider-horizontal .ui-slider-handle {
+        top: -.37em;
     }
     
     .ui-slider-handle.ui-corner-all {
@@ -243,7 +290,8 @@
         height: .8em;
         border: none;
     }
-     .ui-slider.ui-widget-content .ui-state-default {
+    
+    .ui-slider.ui-widget-content .ui-state-default {
         background: black;
     }
     
@@ -251,7 +299,97 @@
         background: rgb(111, 113, 115);
     }
     
-   
+    .ui-slider-handle.ui-state-default.ui-corner-all {
+        cursor: pointer;
+        outline: none;
+    }
+    
+    .wc-horizontal-input,
+    .wc-vertical-input {
+        position: absolute;
+        width: 40px;
+        border: none;
+        background-color: #ff6600;
+        color: white;
+        font-size: 16px;
+        padding: 5px;
+    }
+    
+    .wc-vertical-input {
+        top: 150px;
+        right: -60px;
+    }
+    
+    .wc-horizontal-input {
+        top: 300px;
+        right: 190px;
+    }
+    
+    .wc-section-preview {
+        height: 300px;
+    }
+    
+    .wc-line {
+        border-style: dashed;
+        border-color: #9d0303;
+        border-radius: 7px;
+        border-width: 1px;
+    }
+    
+    .wc-price {
+        position: relative;
+        height: 70px;
+    }
+    
+    .wc-price-button {
+        top: 20px;
+        position: absolute;
+        width: 194px;
+        height: 41px;
+        text-transform: uppercase;
+        background-color: #f99100;
+        color: white;
+        border-radius: 20px;
+        font-size: 20px;
+        border-width: 1px;
+        font-weight: bold;
+        font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+        background: #fa9d00;
+        background-image: -webkit-linear-gradient(top, #fa9d00, #f66b00);
+        background-image: -moz-linear-gradient(top, #fa9d00, #f66b00);
+        background-image: -ms-linear-gradient(top, #fa9d00, #f66b00);
+        background-image: -o-linear-gradient(top, #fa9d00, #f66b00);
+        background-image: linear-gradient(to bottom, #fa9d00, #f66b00);
+        -webkit-border-radius: 28;
+        -moz-border-radius: 28;
+        border-radius: 28px;
+        color: #ffffff;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    
+    .wc-price-button:hover {
+        background: #f09809;
+        background-image: -webkit-linear-gradient(top, #f09809, #e86100);
+        background-image: -moz-linear-gradient(top, #f09809, #e86100);
+        background-image: -ms-linear-gradient(top, #f09809, #e86100);
+        background-image: -o-linear-gradient(top, #f09809, #e86100);
+        background-image: linear-gradient(to bottom, #f09809, #e86100);
+        text-decoration: none;
+        cursor: pointer;
+        color: #F7F7F7;
+    }
+    
+    .wc-price-static-label {
+        position: absolute;
+        top: 15px;
+        left: 250px;
+        text-transform: uppercase;
+        color: #9d0303;
+        font-weight: bold;
+        font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+        font-size: 18px;
+    }
 </style>
 
 </html>
