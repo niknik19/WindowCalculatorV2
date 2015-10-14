@@ -27,8 +27,11 @@
                     </div>
                 </div>
 
-                <div>
+                <div class="wc-section-types">
+                    <div class="wc-selected-carriage" style="left: 5px; top: 73px; width: 39px; height: 53px;"></div>
                     <div class="wc-section-type">
+
+
                         <div class="wc-section-type-row">
                             <div class="wc-section-type-element">
                                 <div class="wc-section-type-element-caption">
@@ -36,9 +39,12 @@
                                 </div>
 
                                 <div>
-                                    <div class="wc-section-type-element-image"></div>
-                                    <div class="wc-section-type-element-image"> </div>
-                                    <div class="wc-section-type-element-image"> </div>
+                                    <div class="wc-section-type-element-image wc-1ct1 wc-selected" data-type="1ct1"> <img src="/wcalc/img/small/1ct1.jpg">
+                                    </div>
+                                    <div class="wc-section-type-element-image wc-1ct2" data-type="1ct2"> <img src="/wcalc/img/small/1ct2.jpg">
+                                    </div>
+                                    <div class="wc-section-type-element-image wc-1ct3" data-type="1ct3"> <img src="/wcalc/img/small/1ct3.jpg">
+                                    </div>
                                 </div>
                             </div>
 
@@ -48,8 +54,10 @@
                                 </div>
 
                                 <div>
-                                    <div class="wc-section-type-element-image"></div>
-                                    <div class="wc-section-type-element-image"> </div>
+                                    <div class="wc-section-type-element-image wc-2ct1" data-type="2ct1"> <img src="/wcalc/img/small/2ct1.jpg">
+                                    </div>
+                                    <div class="wc-section-type-element-image wc-2ct2" data-type="2ct2"> <img src="/wcalc/img/small/2ct2.jpg">
+                                    </div>
                                 </div>
                             </div>
 
@@ -64,9 +72,9 @@
                                 </div>
 
                                 <div>
-                                    <div class="wc-section-type-element-image"></div>
-                                    <div class="wc-section-type-element-image"> </div>
-                                    <div class="wc-section-type-element-image"> </div>
+                                    <div class="wc-section-type-element-image wc-3ct1" data-type="3ct1"> <img src="/wcalc/img/small/3ct1.jpg"> </div>
+                                    <div class="wc-section-type-element-image wc-3ct2" data-type="3ct2"> <img src="/wcalc/img/small/3ct2.jpg"> </div>
+                                    <div class="wc-section-type-element-image wc-3ct3" data-type="3ct3"> <img src="/wcalc/img/small/3ct3.jpg"> </div>
                                 </div>
                             </div>
                         </div>
@@ -80,9 +88,8 @@
                                 </div>
 
                                 <div>
-                                    <div class="wc-section-type-element-image"></div>
-                                    <div class="wc-section-type-element-image"> </div>
-                                    <div class="wc-section-type-element-image"> </div>
+                                    <div class="wc-section-type-element-image wc-4ct1" data-type="4ct1"> <img src="/wcalc/img/small/4ct1.jpg"> </div>
+                                    <div class="wc-section-type-element-image wc-4ct2" data-type="4ct2"> <img src="/wcalc/img/small/4ct2.jpg"> </div>
                                 </div>
                             </div>
 
@@ -92,8 +99,8 @@
                                 </div>
 
                                 <div>
-                                    <div class="wc-section-type-element-image"></div>
-                                    <div class="wc-section-type-element-image"> </div>
+                                    <div class="wc-section-type-element-image wc-db1" data-type="db1"> <img src="/wcalc/img/small/db1.jpg"> </div>
+                                    <div class="wc-section-type-element-image wc-db2" data-type="db2"> <img src="/wcalc/img/small/db2.jpg"> </div>
                                 </div>
                             </div>
 
@@ -112,9 +119,10 @@
 
                 <div class="wc-profile-system">
                     <select>
-                        <option>DEXEN 58</option>
-                        <option>DEXEN 58</option>
-                        <option>DEXEN 58</option>
+                        <option value="DEXEN">DEXEN 58</option>
+                        <option value="WDS">WDS 404 60</option>
+                        <option value="KBE">КВЕ Эксперт 70</option>
+                        <option value="SALAMANDER">Salamander Streamline 76</option>
                     </select>
                 </div>
 
@@ -123,15 +131,14 @@
                         Шаг 3
                     </div>
                     <div class="wc-section-cation-definition">
-                        выберите тип оконной конструкции
+                        выберите стеклопакет
                     </div>
                 </div>
 
-                <div class="wc-profile-system">
+                <div class="wc-glass-type">
                     <select>
-                        <option>DEXEN 58</option>
-                        <option>DEXEN 58</option>
-                        <option>DEXEN 58</option>
+                        <option value="SINGLE">Однокамерный (2 стекла)</option>
+                        <option value="DOUBLE">Двухкамерный (3 стекла)</option>
                     </select>
                 </div>
 
@@ -148,7 +155,9 @@
                 </div>
 
                 <div class="wc-section-preview">
-                    <div class="wc-preview"></div>
+                    <div class="wc-preview">
+                        <img src="wcalc/img/big/b1ct1.jpg">
+                    </div>
 
                     <div class="wc-slider-vertical"></div>
 
@@ -166,6 +175,7 @@
                     <label class="wc-price-static-label">Стоимость изделия</label>
                     <label class="wc-price-label"></label>
                     <div class="wc-price-spinner"></div>
+                    <div class="wc-price-error"></div>
                 </div>
             </div>
 
@@ -199,6 +209,10 @@
         width: 430px;
     }
     
+    .wc-seaction-types {
+        position: relative;
+    }
+    
     .wc-section-type-element-caption {
         font-size: 17px;
         font-family: "Calibri";
@@ -207,21 +221,52 @@
     }
     
     .wc-section-type-element-image {
-        height: 40px;
-        width: 30px;
-        background: black;
+        padding: 8px 10px 2px 0px;
         display: inline-block;
+    }
+    
+    .wc-section-type-element-image img:hover {
+        box-shadow: 2px 2px 2px -1px #000;
+        cursor: pointer;
     }
     
     .wc-section-type-element {
+        padding: 5px 10px;
+        vertical-align: top;
         display: inline-block;
     }
     
-    .wc-profile-system select {
+    .wc-profile-system select,
+    .wc-glass-type select {
         color: gray;
         font-style: italic;
         padding: 5px;
         border: 1px orange solid;
+        background: url(wcalc/img/orange_arrow.png) no-repeat right;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        -o-appearance: none;
+        appearance: none;
+        width: 350px;
+        margin: 15px 30px;
+        cursor: pointer;
+    }
+    
+    .wc-profile-system select::-ms-expand,
+    .wc-glass-type select::-ms-expand {
+        display: none;
+    }
+    
+    .wc-profile-system select:focus::-ms-value,
+    .wc-glass-type select:focus::-ms-value {
+        background: rgba(255, 255, 255, 0);
+        color: gray;
+    }
+    
+    .wc-profile-system select option,
+    .wc-glass-type select option {
+        padding: 5px;
     }
     
     .wc-section-left,
@@ -234,15 +279,15 @@
     .wc-preview {
         margin: 20px;
         width: 400px;
-        height: 200px;
-        background: red;
+        height: 353px;
+        background: transparent;
     }
     
     .wc-slider-vertical {
-        height: 200px;
+        height: 300px;
         width: 0px;
         position: absolute;
-        top: 67px;
+        top: 90px;
         right: 0;
         border-left-color: #C5C4C4;
         border-left-width: 2px;
@@ -253,9 +298,9 @@
     .wc-slider-horizontal {
         height: 0px;
         position: absolute;
-        top: 285px;
-        right: 20px;
-        width: 400px;
+        top: 425px;
+        left: 21px;
+        width: 390px;
         border-top-color: #C5C4C4;
         border-top-width: 2px;
         border-bottom-color: #AFAEAE;
@@ -277,11 +322,11 @@
     }
     
     .ui-slider-vertical .ui-slider-handle {
-        left: -.37em;
+        left: -.42em;
     }
     
     .ui-slider-horizontal .ui-slider-handle {
-        top: -.37em;
+        top: -.42em;
     }
     
     .ui-slider-handle.ui-corner-all {
@@ -302,6 +347,8 @@
     .ui-slider-handle.ui-state-default.ui-corner-all {
         cursor: pointer;
         outline: none;
+        border: 1px solid gray;
+        background: url(/wcalc/img/slider_handle.png) 50% 30% transparent;
     }
     
     .wc-horizontal-input,
@@ -316,17 +363,17 @@
     }
     
     .wc-vertical-input {
-        top: 150px;
+        top: 225px;
         right: -60px;
     }
     
     .wc-horizontal-input {
-        top: 300px;
+        top: 440px;
         right: 190px;
     }
     
     .wc-section-preview {
-        height: 300px;
+        height: 420px;
     }
     
     .wc-line {
@@ -380,6 +427,22 @@
         color: #F7F7F7;
     }
     
+    .wc-selected-carriage {
+        box-shadow: inset 0px 0px 20px 0px rgba(192, 192, 192, 0.8);
+        border: 1px rgb(128, 128, 128) solid;
+        border-radius: 5px;
+        position: absolute;
+        top: 36px;
+        width: 39px;
+        -webkit-transition: left .3s ease-out, top .3s ease-out, height .3s ease-out, width .3s ease-out;
+        -moz-transition: left .3s ease-out, top .3s ease-out, height .3s ease-out, width .3s ease-out;
+        -o-transition: left .3s ease-out, top .3s ease-out, height .3s ease-out, width .3s ease-out;
+        transition: left .3s ease-out, top .3s ease-out, height .3s ease-out, width .3s ease-out;
+        height: 50px;
+        left: 0px;
+        z-index: 0;
+    }
+    
     .wc-price-static-label {
         position: absolute;
         top: 15px;
@@ -389,6 +452,41 @@
         font-weight: bold;
         font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
         font-size: 18px;
+        display: none;
+    }
+    
+    .wc-price-label {
+        position: absolute;
+        top: 30px;
+        left: 250px;
+        color: #9d0303;
+        font-weight: bold;
+        font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+        font-size: 40px;
+    }
+    
+    .wc-price-spinner {
+        background: url(/wcalc/img/spinner1.gif) 50% 50% white no-repeat;
+        height: 65px;
+        width: 300px;
+        z-index: 2;
+        position: absolute;
+        left: 200px;
+        top: 7px;
+        transition: opacity .4s ease-out;
+        opacity: 0;
+    }
+    
+    .wc-price-error {
+        position: absolute;
+        top: 10px;
+        left: 200px;
+        color: #9d0303;
+        font-weight: bold;
+        font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+        font-size: 15px;
+        width: 300px;
+        text-align: center;
     }
 </style>
 
