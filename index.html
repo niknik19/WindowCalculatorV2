@@ -1,0 +1,493 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Window Calculator V2</title>
+    <!--    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+    </script> -->
+    <link href="wcalc/css/jquery-ui.css" rel="stylesheet">
+    <link href="wcalc/css/windows-calculator.css" rel="stylesheet">
+
+    <script src="wcalc/js/jquery.js"></script>
+    <script src="wcalc/js/jquery-ui.js"></script>
+    <script src="wcalc/js/window-calculator.js"></script>
+</head>
+
+<body>
+    <div>
+        <section id="wc-window-type">
+            <div class="wc-section-left">
+                <div class="wc-section-caption">
+                    <div class="wc-section-caption-main">
+                        Шаг 1
+                    </div>
+                    <div class="wc-section-cation-definition">
+                        выберите тип оконной конструкции
+                    </div>
+                </div>
+
+                <div class="wc-section-types">
+                    <div class="wc-selected-carriage" style="left: 5px; top: 73px; width: 39px; height: 53px;"></div>
+                    <div class="wc-section-type">
+
+
+                        <div class="wc-section-type-row">
+                            <div class="wc-section-type-element">
+                                <div class="wc-section-type-element-caption">
+                                    одностворчатое окно:
+                                </div>
+
+                                <div>
+                                    <div class="wc-section-type-element-image wc-1ct1 wc-selected" data-type="1ct1"> <img src="/wcalc/img/small/1ct1.jpg">
+                                    </div>
+                                    <div class="wc-section-type-element-image wc-1ct2" data-type="1ct2"> <img src="/wcalc/img/small/1ct2.jpg">
+                                    </div>
+                                    <div class="wc-section-type-element-image wc-1ct3" data-type="1ct3"> <img src="/wcalc/img/small/1ct3.jpg">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="wc-section-type-element">
+                                <div class="wc-section-type-element-caption">
+                                    двухстворчатое окно:
+                                </div>
+
+                                <div>
+                                    <div class="wc-section-type-element-image wc-2ct1" data-type="2ct1"> <img src="/wcalc/img/small/2ct1.jpg">
+                                    </div>
+                                    <div class="wc-section-type-element-image wc-2ct2" data-type="2ct2"> <img src="/wcalc/img/small/2ct2.jpg">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="wc-section-type">
+                        <div class="wc-section-type-row">
+                            <div class="wc-section-type-element">
+                                <div class="wc-section-type-element-caption">
+                                    трёхстворачатое окно:
+                                </div>
+
+                                <div>
+                                    <div class="wc-section-type-element-image wc-3ct1" data-type="3ct1"> <img src="/wcalc/img/small/3ct1.jpg"> </div>
+                                    <div class="wc-section-type-element-image wc-3ct2" data-type="3ct2"> <img src="/wcalc/img/small/3ct2.jpg"> </div>
+                                    <div class="wc-section-type-element-image wc-3ct3" data-type="3ct3"> <img src="/wcalc/img/small/3ct3.jpg"> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wc-section-type">
+                        <div class="wc-section-type-row">
+                            <div class="wc-section-type-element">
+                                <div class="wc-section-type-element-caption">
+                                    четырёхстворчатая дверь:
+                                </div>
+
+                                <div>
+                                    <div class="wc-section-type-element-image wc-4ct1" data-type="4ct1"> <img src="/wcalc/img/small/4ct1.jpg"> </div>
+                                    <div class="wc-section-type-element-image wc-4ct2" data-type="4ct2"> <img src="/wcalc/img/small/4ct2.jpg"> </div>
+                                </div>
+                            </div>
+
+                            <div class="wc-section-type-element">
+                                <div class="wc-section-type-element-caption">
+                                    балконная дверь:
+                                </div>
+
+                                <div>
+                                    <div class="wc-section-type-element-image wc-db1" data-type="db1"> <img src="/wcalc/img/small/db1.jpg"> </div>
+                                    <div class="wc-section-type-element-image wc-db2" data-type="db2"> <img src="/wcalc/img/small/db2.jpg"> </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wc-section-caption">
+                    <div class="wc-section-caption-main">
+                        Шаг 2
+                    </div>
+                    <div class="wc-section-cation-definition">
+                        выберите тип оконной конструкции
+                    </div>
+                </div>
+
+                <div class="wc-profile-system">
+                    <select>
+                        <option value="DEXEN">DEXEN 58</option>
+                        <option value="WDS">WDS 404 60</option>
+                        <option value="KBE">КВЕ Эксперт 70</option>
+                        <option value="SALAMANDER">Salamander Streamline 76</option>
+                    </select>
+                </div>
+
+                <div class="wc-section-caption">
+                    <div class="wc-section-caption-main">
+                        Шаг 3
+                    </div>
+                    <div class="wc-section-cation-definition">
+                        выберите стеклопакет
+                    </div>
+                </div>
+
+                <div class="wc-glass-type">
+                    <select>
+                        <option value="SINGLE">Однокамерный (2 стекла)</option>
+                        <option value="DOUBLE">Двухкамерный (3 стекла)</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="wc-section-right">
+
+                <div class="wc-section-caption">
+                    <div class="wc-section-caption-main">
+                        Шаг 4
+                    </div>
+                    <div class="wc-section-cation-definition">
+                        выберите тип оконной конструкции
+                    </div>
+                </div>
+
+                <div class="wc-section-preview">
+                    <div class="wc-preview">
+                        <img src="wcalc/img/big/b1ct1.jpg">
+                    </div>
+
+                    <div class="wc-slider-vertical"></div>
+
+                    <div class="wc-slider-horizontal"></div>
+
+                    <input class="wc-vertical-input">
+
+                    <input class="wc-horizontal-input">
+                </div>
+
+                <div class="wc-line"></div>
+
+                <div class="wc-price">
+                    <button class="wc-price-button">Расcчитать</button>
+                    <label class="wc-price-static-label">Стоимость изделия</label>
+                    <label class="wc-price-label"></label>
+                    <div class="wc-price-spinner"></div>
+                    <div class="wc-price-error"></div>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+</body>
+
+<style>
+    .wc-section-caption {
+        background-color: #99cc66;
+        width: 393px;
+        height: 47px;
+        padding: 0px 17px;
+        font-family: "Calibri";
+        color: rgb(255, 255, 255);
+    }
+    
+    .wc-section-caption-main {
+        text-transform: uppercase;
+        font-size: 21px;
+        font-weight: bold;
+    }
+    
+    .wc-section-caption-definition {
+        font-size: 19px;
+    }
+    
+    .wc-section-left {
+        width: 430px;
+    }
+    
+    .wc-seaction-types {
+        position: relative;
+    }
+    
+    .wc-section-type-element-caption {
+        font-size: 17px;
+        font-family: "Calibri";
+        color: rgb(75, 75, 75);
+        font-style: italic;
+    }
+    
+    .wc-section-type-element-image {
+        padding: 8px 10px 2px 0px;
+        display: inline-block;
+    }
+    
+    .wc-section-type-element-image img:hover {
+        box-shadow: 2px 2px 2px -1px #000;
+        cursor: pointer;
+    }
+    
+    .wc-section-type-element {
+        padding: 5px 10px;
+        vertical-align: top;
+        display: inline-block;
+    }
+    
+    .wc-profile-system select,
+    .wc-glass-type select {
+        color: gray;
+        font-style: italic;
+        padding: 5px;
+        border: 1px orange solid;
+        background: url(wcalc/img/orange_arrow.png) no-repeat right;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        -o-appearance: none;
+        appearance: none;
+        width: 350px;
+        margin: 15px 30px;
+        cursor: pointer;
+    }
+    
+    .wc-profile-system select::-ms-expand,
+    .wc-glass-type select::-ms-expand {
+        display: none;
+    }
+    
+    .wc-profile-system select:focus::-ms-value,
+    .wc-glass-type select:focus::-ms-value {
+        background: rgba(255, 255, 255, 0);
+        color: gray;
+    }
+    
+    .wc-profile-system select option,
+    .wc-glass-type select option {
+        padding: 5px;
+    }
+    
+    .wc-section-left,
+    .wc-section-right {
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+    }
+    
+    .wc-preview {
+        margin: 20px;
+        width: 400px;
+        height: 353px;
+        background: transparent;
+    }
+    
+    .wc-slider-vertical {
+        height: 300px;
+        width: 0px;
+        position: absolute;
+        top: 90px;
+        right: 0;
+        border-left-color: #C5C4C4;
+        border-left-width: 2px;
+        border-right-color: #989898;
+        border-right-width: 2px;
+    }
+    
+    .wc-slider-horizontal {
+        height: 0px;
+        position: absolute;
+        top: 425px;
+        left: 21px;
+        width: 390px;
+        border-top-color: #C5C4C4;
+        border-top-width: 2px;
+        border-bottom-color: #AFAEAE;
+        border-bottom-width: 2px;
+    }
+    
+    .wc-slider-horizontal .ui-slider-range.ui-widget-header {
+        height: 2px;
+        top: -2px;
+        border: 1px solid rgb(211, 211, 211);
+        background-color: #f7b549;
+    }
+    
+    .wc-slider-vertical .ui-slider-range.ui-widget-header {
+        width: 2px;
+        left: -2px;
+        border: 1px solid rgb(211, 211, 211);
+        background-color: rgb(247, 181, 73);
+    }
+    
+    .ui-slider-vertical .ui-slider-handle {
+        left: -.42em;
+    }
+    
+    .ui-slider-horizontal .ui-slider-handle {
+        top: -.42em;
+    }
+    
+    .ui-slider-handle.ui-corner-all {
+        border-radius: 12px;
+        width: .8em;
+        height: .8em;
+        border: none;
+    }
+    
+    .ui-slider.ui-widget-content .ui-state-default {
+        background: black;
+    }
+    
+    .ui-slider.ui-widget-content .ui-state-hover {
+        background: rgb(111, 113, 115);
+    }
+    
+    .ui-slider-handle.ui-state-default.ui-corner-all {
+        cursor: pointer;
+        outline: none;
+        border: 1px solid gray;
+        background: url(/wcalc/img/slider_handle.png) 50% 30% transparent;
+    }
+    
+    .wc-horizontal-input,
+    .wc-vertical-input {
+        position: absolute;
+        width: 40px;
+        border: none;
+        background-color: #ff6600;
+        color: white;
+        font-size: 16px;
+        padding: 5px;
+    }
+    
+    .wc-vertical-input {
+        top: 225px;
+        right: -60px;
+    }
+    
+    .wc-horizontal-input {
+        top: 440px;
+        right: 190px;
+    }
+    
+    .wc-section-preview {
+        height: 420px;
+    }
+    
+    .wc-line {
+        border-style: dashed;
+        border-color: #9d0303;
+        border-radius: 7px;
+        border-width: 1px;
+    }
+    
+    .wc-price {
+        position: relative;
+        height: 70px;
+    }
+    
+    .wc-price-button {
+        top: 20px;
+        position: absolute;
+        width: 194px;
+        height: 41px;
+        text-transform: uppercase;
+        background-color: #f99100;
+        color: white;
+        border-radius: 20px;
+        font-size: 20px;
+        border-width: 1px;
+        font-weight: bold;
+        font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+        background: #fa9d00;
+        background-image: -webkit-linear-gradient(top, #fa9d00, #f66b00);
+        background-image: -moz-linear-gradient(top, #fa9d00, #f66b00);
+        background-image: -ms-linear-gradient(top, #fa9d00, #f66b00);
+        background-image: -o-linear-gradient(top, #fa9d00, #f66b00);
+        background-image: linear-gradient(to bottom, #fa9d00, #f66b00);
+        -webkit-border-radius: 28;
+        -moz-border-radius: 28;
+        border-radius: 28px;
+        color: #ffffff;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    
+    .wc-price-button:hover {
+        background: #f09809;
+        background-image: -webkit-linear-gradient(top, #f09809, #e86100);
+        background-image: -moz-linear-gradient(top, #f09809, #e86100);
+        background-image: -ms-linear-gradient(top, #f09809, #e86100);
+        background-image: -o-linear-gradient(top, #f09809, #e86100);
+        background-image: linear-gradient(to bottom, #f09809, #e86100);
+        text-decoration: none;
+        cursor: pointer;
+        color: #F7F7F7;
+    }
+    
+    .wc-selected-carriage {
+        box-shadow: inset 0px 0px 20px 0px rgba(192, 192, 192, 0.8);
+        border: 1px rgb(128, 128, 128) solid;
+        border-radius: 5px;
+        position: absolute;
+        top: 36px;
+        width: 39px;
+        -webkit-transition: left .3s ease-out, top .3s ease-out, height .3s ease-out, width .3s ease-out;
+        -moz-transition: left .3s ease-out, top .3s ease-out, height .3s ease-out, width .3s ease-out;
+        -o-transition: left .3s ease-out, top .3s ease-out, height .3s ease-out, width .3s ease-out;
+        transition: left .3s ease-out, top .3s ease-out, height .3s ease-out, width .3s ease-out;
+        height: 50px;
+        left: 0px;
+        z-index: 0;
+    }
+    
+    .wc-price-static-label {
+        position: absolute;
+        top: 15px;
+        left: 250px;
+        text-transform: uppercase;
+        color: #9d0303;
+        font-weight: bold;
+        font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+        font-size: 18px;
+        display: none;
+    }
+    
+    .wc-price-label {
+        position: absolute;
+        top: 30px;
+        left: 250px;
+        color: #9d0303;
+        font-weight: bold;
+        font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+        font-size: 40px;
+    }
+    
+    .wc-price-spinner {
+        background: url(/wcalc/img/spinner1.gif) 50% 50% white no-repeat;
+        height: 65px;
+        width: 300px;
+        z-index: 2;
+        position: absolute;
+        left: 200px;
+        top: 7px;
+        transition: opacity .4s ease-out;
+        opacity: 0;
+    }
+    
+    .wc-price-error {
+        position: absolute;
+        top: 10px;
+        left: 200px;
+        color: #9d0303;
+        font-weight: bold;
+        font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+        font-size: 15px;
+        width: 300px;
+        text-align: center;
+    }
+</style>
+
+</html>
