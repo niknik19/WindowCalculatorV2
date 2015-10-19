@@ -18,8 +18,8 @@ $(function () {
         orientation: "vertical",
         range: "min",
         min: 0,
-        max: 4000,
-        value: 1500,
+        max: 3100,
+        value: 500,
         slide: function (event, ui) {
             heightInput.val(ui.value);
         }
@@ -31,8 +31,8 @@ $(function () {
         orientation: "horizontal",
         range: "min",
         min: 0,
-        max: 3000,
-        value: 1700,
+        max: 3100,
+        value: 500,
         slide: function (event, ui) {
             widthInput.val(ui.value);
         }
