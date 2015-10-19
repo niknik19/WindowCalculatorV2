@@ -374,7 +374,7 @@ function WindowCalculator() {
             }
         case (WindowCalculator.GLASS_TYPE.DOUBLE):
             {
-                return factor + square * 2.7;
+                return square * 2.7;
             }
         }
     };
