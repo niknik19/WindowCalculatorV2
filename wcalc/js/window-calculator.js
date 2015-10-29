@@ -4,7 +4,7 @@ $(function () {
     var imageSelector = '.wc-section-type-element-image';
     var selectedClass = 'wc-selected';
     var carriageSelector = '.wc-selected-carriage';
-    var bigImagePattern = 'wcalc/img/big/b';
+    var bigImagePattern = '/wcalc/img/big/b';
     var bigImageSelector = '.wc-preview img';
 
     var heightSlider = $('.wc-slider-vertical');
