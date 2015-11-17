@@ -175,8 +175,8 @@
         background: url(/wcalc/img/slider_handle.png) 50% 30% transparent;
     }
     
-    .wc-horizontal-input,
-    .wc-vertical-input {
+    input[type="text"].wc-horizontal-input,
+    input[type="text"].wc-vertical-input {
         position: absolute;
         width: 40px;
         border: none;
@@ -311,4 +311,9 @@
         font-size: 15px;
         width: 300px;
         text-align: center;
+    }
+
+    div.wc-section-left img, 
+    div.wc-section-right img {
+        margin: 0px;
     }
