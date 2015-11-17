@@ -90,7 +90,7 @@ $(function () {
                 $('.wc-price-static-label').hide();
                 $('.wc-price-label').text('').hide();
             } else {
-                $('.wc-price-error').text(priceResult.errorMessage).hide();
+                $('.wc-price-error').text('').hide();
                 $('.wc-price-static-label').show();
                 $('.wc-price-label').text(priceResult.result).show();
             }
