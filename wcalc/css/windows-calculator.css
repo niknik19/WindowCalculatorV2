@@ -317,3 +317,12 @@
     div.wc-section-right img {
         margin: 0px;
     }
+
+    .wc-section-left, 
+    .wc-section-right {
+        line-height: normal;
+    }
+
+    .wc-line {
+        height: 0
+    }

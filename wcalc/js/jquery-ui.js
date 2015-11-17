@@ -1056,7 +1056,7 @@ var mouse = $.widget("ui.mouse", {
 
 var slider = $.widget( "ui.slider", $.ui.mouse, {
 	version: "1.11.4",
-	widgetEventPrefix: "slide",
+	widgetEventPrefix: "slidez",
 
 	options: {
 		animate: false,
