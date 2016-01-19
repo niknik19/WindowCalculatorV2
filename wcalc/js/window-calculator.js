@@ -15,6 +15,7 @@ $(function () {
 
     /* SLIDER INIT */
     heightSlider.slider({
+        step: 20,
         orientation: "vertical",
         range: "min",
         min: 0,
@@ -28,6 +29,7 @@ $(function () {
     heightInput.val(heightSlider.slider("value"));
 
     widthSlider.slider({
+        step: 20,
         orientation: "horizontal",
         range: "min",
         min: 0,
