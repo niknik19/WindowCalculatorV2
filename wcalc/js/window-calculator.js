@@ -340,7 +340,7 @@ function WindowCalculator() {
     };
 
     this.getCurrency = function () {
-        return 17500;
+        return 2.02;
     };
 
     this.getAddedFactor = function () {
@@ -386,7 +386,7 @@ function WindowCalculator() {
     };
 
     this.ceilPrice = function (price) {
-        return Math.ceil(price / 1000) * 1000;
+        return Math.ceil(price);
     }
 
     this.getPrice = function (glassType, profileType, productType, height, width) {
